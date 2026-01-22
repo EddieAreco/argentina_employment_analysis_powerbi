@@ -1,7 +1,7 @@
-# argentina_employment_analysis_powerbi
+📊 Análisis de Empleabilidad por Provincia y Sector en Argentina
 Tablero de Power BI que analiza las tendencias de empleo, la composición del sector y la volatilidad regional en Argentina utilizando datos históricos.
 
-📊 Análisis del Empleo por Provincia y Sector en Argentina
+
 
 Evolución, estructura y volatilidad del empleo basada en datos históricos
 
