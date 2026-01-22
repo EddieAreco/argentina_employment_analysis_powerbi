@@ -8,7 +8,8 @@ Evolución, estructura y volatilidad del empleo basada en datos históricos
 
 📌 Objetivo del proyecto
 
-El objetivo de este proyecto es analizar la evolución del empleo en Argentina a lo largo del tiempo, combinando información de:
+El objetivo de este proyecto es analizar la evolución del empleo en Argentina a lo largo del periodo 2007-2023, tomando como base la información extraida de la página datos.gob.ar, la misma publica la información en base al Ministerio de Desarrollo Productivo y tomando como fuente primaria la Administración Federal de Ingresos Públicos (AFIP)
+En esta base de datos se combinan:
 
 cantidad total de puestos de trabajo
 
@@ -38,7 +39,7 @@ El dashboard fue diseñado para responder, entre otras, las siguientes preguntas
 
 ¿Qué sectores económicos explican la mayor parte del empleo?
 
-¿Cómo cambia el peso relativo de cada provincia a lo largo del tiempo?
+¿Cambia el peso relativo de cada provincia a lo largo del tiempo o siempre son las mismas provincias las que concentran la mayor cantidad de empleo?
 
 ¿La variación interanual acompaña o contradice el crecimiento del empleo?
 
@@ -48,7 +49,9 @@ Estas preguntas guían toda la estructura visual del dashboard.
 
 El dataset contiene información histórica del empleo en Argentina, desagregada por:
 
-Año
+Tabla 1:
+
+Fecha
 
 Provincia
 
@@ -56,13 +59,33 @@ Sector económico (CLAE2)
 
 Cantidad de puestos de trabajo
 
-A partir de estos datos se calcularon métricas derivadas como:
+Tabla 2:
+
+CLAE6
+
+descripción CLAE6
+
+CLAE3
+
+descripción CLAE3
+
+CLAE2
+
+descripción CLAE2
+
+letra
+
+descripción letra
+
+A partir de estos datos se agregaron las columnas "año" en la Tabla 1 y "Sector" en la Tabla 2, y se calcularon métricas derivadas como:
 
 variación interanual del empleo
 
 volatilidad interanual
 
 participación relativa por provincia
+
+porcentaje de representatividad por provincia 
 
 El volumen y la granularidad del dataset permiten realizar análisis:
 
@@ -195,12 +218,14 @@ contextualizar los resultados geográficos y temporales
 
 🚀 Conclusiones principales
 
-El empleo presenta una fuerte concentración en pocas provincias.
+El empleo presenta una fuerte concentración en pocas provincias, más precisamente en Buenos Aires y Capital Federal.
 
 El crecimiento del empleo no siempre implica mayor estabilidad.
 
-Existen provincias con bajo volumen pero alta volatilidad.
+Existen provincias con bajo volumen pero alta volatilidad como Tierra del Fuego y Catamarca.
 
-La variación interanual permite identificar ciclos económicos claros.
+La variación interanual permite identificar ciclos económicos claros, es algo que se puede visualizar claramente en el periodo 2019 y 2020 donde casi todas las provincias tuvieron caídas en el empleo devido a la pandemia de COVID; salvo Capital Federal, el resto de las provincias del país muestran un crecimiento interanual del empleo en el periodo de 2008 a 2015 pero luego de este año, en el periodo 2015 a 2023, la tendencia se invierte y las mayorias de provincias registran retrocesos laborales.
 
-La composición sectorial explica gran parte del comportamiento agregado.
+La composición sectorial explica gran parte del comportamiento agregado, es decir, la evolución del empleo agregado está fuertemente influenciada por los sectores con mayor participación en el total, lo que indica que cambios en estos sectores dominantes explican gran parte de la dinámica general del mercado laboral, estos serían Comercio al por menor excepto autos y motos, Enseñanza, Comercio al por mayor excepto autos y motos y Agricultura, ganadería, caza y servicios relacionados.
+
+El sector de Servicios es el que más puestos de trabajo representa, muy por encima de los sectores Primario e Industrial, marcando un peso porcentual de casi un 73%.
