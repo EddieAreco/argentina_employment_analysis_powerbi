@@ -1,4 +1,4 @@
-📊 Análisis de Empleabilidad por Provincia y Sector en Argentina
+## 📊 Análisis de Empleabilidad por Provincia y Sector en Argentina
 
 Tablero de Power BI que analiza las tendencias de empleo, la composición del sector y la volatilidad regional en Argentina utilizando datos históricos.
 
@@ -6,9 +6,9 @@ Tablero de Power BI que analiza las tendencias de empleo, la composición del se
 
 Evolución, estructura y volatilidad del empleo basada en datos históricos
 
-📌 Objetivo del proyecto
+## 📌 Objetivo del proyecto
 
-El objetivo de este proyecto es analizar la evolución del empleo en Argentina a lo largo del periodo 2007-2023, tomando como base la información extraida de la página datos.gob.ar, la misma publica la información en base al Ministerio de Desarrollo Productivo y tomando como fuente primaria la Administración Federal de Ingresos Públicos (AFIP)
+El objetivo de este proyecto es analizar la evolución del empleo en Argentina a lo largo del periodo 2007-2023, tomando como base la información extraida de la página datos.gob.ar, la misma publica la información en base al [Ministerio de Desarrollo Productivo]{https://datos.gob.ar/dataset/produccion-puestos-trabajo-asalariados-registrados-por-provincia-sector-actividad} y tomando como fuente primaria la Administración Federal de Ingresos Públicos (AFIP)
 En esta base de datos se combinan:
 
 cantidad total de puestos de trabajo
@@ -25,7 +25,7 @@ con el fin de identificar patrones estructurales, tendencias temporales y difere
 
 El foco no está solo en “cuántos puestos hay”, sino en cómo cambian, dónde se concentran y qué tan estables son.
 
-🧠 Preguntas clave que responde el dashboard
+## 🧠 Preguntas clave que responde el dashboard
 
 El dashboard fue diseñado para responder, entre otras, las siguientes preguntas:
 
@@ -45,7 +45,7 @@ El dashboard fue diseñado para responder, entre otras, las siguientes preguntas
 
 Estas preguntas guían toda la estructura visual del dashboard.
 
-🗂️ Dataset utilizado
+## 🗂️ Dataset utilizado
 
 El dataset contiene información histórica del empleo en Argentina, desagregada por:
 
@@ -77,7 +77,7 @@ letra
 
 descripción letra
 
-A partir de estos datos se agregaron las columnas "año" en la Tabla 1 y "Sector" en la Tabla 2, y se calcularon métricas derivadas como:
+A partir de estos datos se agregaron las columnas "año" en la Tabla 1 y "Rubro" en la Tabla 2, y se calcularon métricas derivadas como:
 
 variación interanual del empleo
 
@@ -97,7 +97,7 @@ estructurales
 
 exploratorios
 
-🔧 Herramientas y tecnologías utilizadas
+## 🔧 Herramientas y tecnologías utilizadas
 
 Power BI
 
@@ -121,8 +121,8 @@ rankings dinámicos
 
 Modelado de datos orientado a análisis y storytelling
 
-📊 Estructura del dashboard (🔹) y decisiones de diseño (👉)
-🔹 KPIs principales
+## 📊 Estructura del dashboard (🔹) y decisiones de diseño (👉)
+## 🔹 KPIs principales
 
 En la parte superior del dashboard se presentan indicadores clave:
 
@@ -136,7 +136,7 @@ Distribución de puestos por sector
 
 👉 Estos KPIs permiten obtener contexto inmediato antes de profundizar en el análisis y funcionan como punto de referencia para interpretar el resto de los gráficos.
 
-🔹 Mapa de calor de variación interanual por provincia
+## 🔹 Mapa de calor de variación interanual por provincia
 
 Tabla tipo heatmap que muestra la variación interanual del empleo por provincia y año.
 
@@ -152,7 +152,7 @@ visualizar estabilidad vs inestabilidad a lo largo del tiempo
 
 El uso de colores facilita la lectura sin necesidad de interpretar cada valor numérico.
 
-🔹 Evolución anual del empleo y variación interanual
+## 🔹 Evolución anual del empleo y variación interanual
 
 Gráfico combinado de barras y línea:
 
@@ -170,7 +170,7 @@ relacionar crecimiento absoluto con cambios relativos
 
 Es clave para entender qué pasó y cuándo pasó.
 
-🔹 Relación entre tamaño del empleo y volatilidad por provincia
+## 🔹 Relación entre tamaño del empleo y volatilidad por provincia
 
 Scatter plot que cruza:
 
@@ -190,7 +190,7 @@ casos atípicos que requieren análisis adicional
 
 Aporta una dimensión de riesgo y estabilidad que no se observa en gráficos tradicionales.
 
-🔹 Peso relativo de cada provincia por año
+## 🔹 Distribución porcentual del empleo por provincia
 
 Gráfico de barras apiladas que muestra cómo se distribuye el empleo entre provincias a lo largo del tiempo.
 
@@ -204,7 +204,7 @@ entender dinámicas estructurales más allá del crecimiento total
 
 Es especialmente útil para análisis comparativos de largo plazo.
 
-🔹 Cantidad de puestos por sector (CLAE2)
+## 🔹 Top sectores por cantidad de puestos de trabajo
 
 Gráfico de barras horizontales que muestra los sectores con mayor cantidad de puestos.
 
@@ -216,7 +216,23 @@ entender la estructura productiva
 
 contextualizar los resultados geográficos y temporales
 
-🚀 Conclusiones principales
+## 🎯 Decisiones de Diseño
+
+¿Por qué no hay mapa geográfico?
+Evalué incluir un mapa de calor de Argentina, pero decidí que:
+- El scatter plot de tamaño vs volatilidad aporta más insight analítico
+- La matriz de variación interanual es más precisa para comparaciones
+- Un mapa solo confirmaría lo obvio (Buenos Aires domina)
+
+¿Por qué barras 100% apiladas?
+Porque permiten ver cambios en participación relativa de provincias más 
+pequeñas, que serían invisibles en valores absolutos dominados por Buenos Aires.
+
+¿Por qué volatilidad como métrica?
+La volatilidad (desviación estándar de variación interanual) identifica 
+provincias con empleo inestable vs estable, útil para evaluar riesgo económico.
+
+## 🚀 Conclusiones principales
 
 El empleo presenta una fuerte concentración en pocas provincias, más precisamente en Buenos Aires y Capital Federal.
 
