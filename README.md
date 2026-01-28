@@ -2,7 +2,7 @@
 
 Tablero de Power BI que analiza las tendencias de empleo, la composición del sector y la volatilidad regional en Argentina utilizando datos históricos.
 
-
+<img width="1482" height="815" alt="Captura de pantalla 2026-01-28 093639" src="https://github.com/user-attachments/assets/04adcf86-1b80-40ab-a1e0-3744cefd8cca" />
 
 Evolución, estructura y volatilidad del empleo basada en datos históricos
 
@@ -122,8 +122,6 @@ rankings dinámicos
 Modelado de datos orientado a análisis y storytelling
 
 ## 📊 Estructura del dashboard (🔹) y decisiones de diseño (👉)
-<img width="1482" height="815" alt="Captura de pantalla 2026-01-28 093639" src="https://github.com/user-attachments/assets/04adcf86-1b80-40ab-a1e0-3744cefd8cca" />
-
 
 ## 🔹 KPIs principales
 
