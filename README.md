@@ -122,6 +122,9 @@ rankings dinámicos
 Modelado de datos orientado a análisis y storytelling
 
 ## 📊 Estructura del dashboard (🔹) y decisiones de diseño (👉)
+<img width="1482" height="815" alt="Captura de pantalla 2026-01-28 093639" src="https://github.com/user-attachments/assets/04adcf86-1b80-40ab-a1e0-3744cefd8cca" />
+
+
 ## 🔹 KPIs principales
 
 En la parte superior del dashboard se presentan indicadores clave:
