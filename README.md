@@ -77,15 +77,18 @@ letra
 
 descripción letra
 
-A partir de estos datos se agregaron las columnas "año" en la Tabla 1 y "Rubro" en la Tabla 2, y se calcularon métricas derivadas como:
+A partir de estos datos se agregaron las columnas "año" en la Tabla 1 y "Rubro" en la Tabla 2, y se calcularon métricas derivadas que fueron ingresadas en una tabla aparte para una mejor práctica y con sus correspondientes descripciones. 
+Las mismas serían:
 
-variación interanual del empleo
+variación interanual
 
-volatilidad interanual
+volatilidad 
 
-participación relativa por provincia
+participación por provincia
 
 porcentaje de representatividad por provincia 
+
+puestos año actual
 
 El volumen y la granularidad del dataset permiten realizar análisis:
 
