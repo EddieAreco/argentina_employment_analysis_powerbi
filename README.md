@@ -4,7 +4,8 @@ Tablero de Power BI que analiza las tendencias de empleo, la composición del se
 
 Evolución, estructura y volatilidad del empleo basada en datos históricos
 
-<img width="1482" height="815" alt="Captura de pantalla 2026-01-28 093639" src="https://github.com/user-attachments/assets/04adcf86-1b80-40ab-a1e0-3744cefd8cca" />
+<img width="1452" height="809" alt="Captura de pantalla 2026-03-20 195800" src="https://github.com/user-attachments/assets/8e3cadda-f9b0-48cf-8c27-0fe2db6f3206" />
+
 
 ## 📌 Objetivo del proyecto
 
